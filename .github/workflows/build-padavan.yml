@@ -64,10 +64,10 @@ jobs:
         sed -i '/CONFIG_FIRMWARE_INCLUDE_SRELAY/d' .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_MTR'/d .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_IPERF3'/d .config
-        #sed -i '/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER'/d .config
+        sed -i '/CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER'/d .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_CURL'/d .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSH'/d .config
-        sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC'/d .config
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSH'/d .config
+        #sed -i '/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EC'/d .config
         sed -i '/CONFIG_FIRMWARE_INCLUDE_EAP_PEAP'/d .config
         sed -i 's/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=n/CONFIG_FIRMWARE_INCLUDE_OPENSSL_EXE=y/g' .config
         ######################################################################
